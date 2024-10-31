@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    background: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 40%, hsl(294, 21%, 91%)30%),
+        url('../assets/images/background-pattern-desktop.svg');
+    background-size: cover;
+    background-position: top;    
+    
+}
+.container{
+    width: 460px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+header{
+    display: flex;
+    margin: 10px 0 ;
+}
+header img{
+    width: 20px;
+}
+header h1{
+    color: hsl(292, 42%, 14%);
+    margin-left: 10px;
+}
+main{
+    margin: 25px 0 10px;
+}
+section{
+    margin: 20px 0;
+    
+}
+.click{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(292, 42%, 14%);
+
+}
+.click:hover{
+    color: rgb(233, 23, 233);
+    cursor:pointer;
+    
+}
+.icon{
+    height: 20px;
+    width: 20px;
+    border-radius:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+}
+.plus{
+    
+    background-color: rgb(233, 23, 233);
+    
+}
+.moins{
+    background-color: black;
+}
+.click+p{
+    color: hsl(292, 16%, 49%);
+    font-size: 14px;
+    line-height: 1.5;
+    
+}
+.hidden{
+    display: none;
+}
+hr{
+    color:hsl(300, 3%, 94%) ;
+}
+
+@media (max-width: 480px) {
+    .container{
+        width: 80%;
+    }
+  }
